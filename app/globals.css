@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+/* =====================================================
+   Abans IT — Commercial Display & AV Solutions
+   Design tokens (Tailwind v4 @theme)
+   ===================================================== */
+
+@theme {
+  /* ---------- Brand palette ---------- */
+  --color-brand: #791F7E;
+  --color-brand-50: #FAF2FB;
+  --color-brand-100: #F2DDF4;
+  --color-brand-200: #E3B8E6;
+  --color-brand-300: #CE8AD3;
+  --color-brand-400: #B45CBA;
+  --color-brand-500: #9A359F;
+  --color-brand-600: #791F7E;
+  --color-brand-700: #5F1864;
+  --color-brand-800: #451247;
+  --color-brand-900: #2D0B2F;
+
+  /* ---------- Neutrals ---------- */
+  --color-ink: #343434;
+  --color-ink-soft: #4A4A4A;
+  --color-muted: #878787;
+  --color-line: #E6E6E6;
+  --color-surface: #F5F5F5;
+  --color-surface-2: #FAFAFA;
+  --color-paper: #FFFFFF;
+
+  /* ---------- Dark surfaces ---------- */
+  --color-night: #111111;
+  --color-night-2: #1A1A1A;
+  --color-night-3: #222222;
+
+  /* ---------- Accents ---------- */
+  --color-green: #26C789;
+  --color-red: #ED2F2F;
+  --color-blue: #3862F7;
+  --color-orange: #FF8A2A;
+  --color-yellow: #FFE209;
+  --color-purple: #9B38F7;
+
+  /* ---------- Typography ---------- */
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+
+  /* Fluid type scale */
+  --text-display: clamp(2.75rem, 5.5vw, 5rem);
+  --text-h1: clamp(1.625rem, 2.5vw, 2.25rem);
+  --text-h2: clamp(1.375rem, 2.25vw, 1.875rem);
+  --text-h3: clamp(1.125rem, 1.5vw, 1.375rem);
+  --text-eyebrow: 0.75rem;
+
+  /* ---------- Radius & shadow ---------- */
+  --radius-card: 1rem;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 1px 2px rgba(52, 52, 52, 0.06), 0 8px 24px rgba(52, 52, 52, 0.06);
+  --shadow-lift: 0 8px 40px rgba(121, 31, 126, 0.18);
+}
+
+/* ---------- Base ---------- */
+:root {
+  --background: #ffffff;
+  --foreground: #343434;
+}
+
+html {
+  background: var(--background);
+  color: var(--foreground);
+  scroll-behavior: smooth;
+}
+
+/* Offset anchors so sticky header doesn't cover section titles */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: "ss01", "cv01";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #791F7E;
+  color: #ffffff;
+}
+
+/* ---------- Utilities ---------- */
+.eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.container-page {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .container-page {
+    padding-inline: 2rem;
+  }
+}
+
+/* Subtle grid texture for dark heroes */
+.bg-grid-dark {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+.bg-radial-brand {
+  background-image: radial-gradient(
+    60% 60% at 70% 30%,
+    rgba(121, 31, 126, 0.55) 0%,
+    rgba(121, 31, 126, 0) 70%
+  );
+}
+
+/* Soft card hover lift */
+.card-lift {
+  transition: transform 300ms ease, box-shadow 300ms ease, border-color 300ms ease;
+}
+.card-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lift);
+}
