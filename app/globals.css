@@ -42,8 +42,8 @@
   --color-purple: #9B38F7;
 
   /* ---------- Typography ---------- */
-  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-questrial), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-questrial), ui-sans-serif, system-ui, sans-serif;
 
   /* Fluid type scale */
   --text-display: clamp(2.75rem, 5.5vw, 5rem);
@@ -80,8 +80,7 @@ section[id] {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
-  font-feature-settings: "ss01", "cv01";
+  font-family: var(--font-questrial), ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

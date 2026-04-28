@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import AnimateIn from "@/app/_components/AnimateIn";
 
 type AVSolution = {
@@ -136,24 +135,6 @@ export default function AVSolutions() {
                     <p className="mt-2 text-xs leading-relaxed text-white/80">
                       {s.body}
                     </p>
-                    <Link
-                      href="#contact"
-                      className="mt-3 inline-flex items-center gap-1.5 text-xs text-brand-300 font-medium"
-                    >
-                      Discuss this solution
-                      <svg
-                        viewBox="0 0 20 20"
-                        className="h-3 w-3"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        aria-hidden
-                      >
-                        <path d="M4 10h12M11 5l5 5-5 5" />
-                      </svg>
-                    </Link>
                   </div>
                 </div>
               </article>

@@ -53,19 +53,18 @@ Feel free to pull in additional grays (e.g. `neutral-100`, `zinc-900` from Tailw
 
 ## 2. Typography
 
-**Body Font:** [Outfit](https://fonts.google.com/specimen/Outfit) — weights 400, 500, 600, 700. Loaded via `next/font/google` in `app/layout.tsx` and exposed as `var(--font-outfit)`.
+**Body Font:** [Questrial](https://fonts.google.com/specimen/Questrial) — weight 400. Loaded via `next/font/google` in `app/layout.tsx` and exposed as `var(--font-questrial)`.
 
-**Heading Font:** [Raleway](https://fonts.google.com/specimen/Raleway) — weights 700 (bold). Loaded via `next/font/google` in `app/layout.tsx` and exposed as `var(--font-raleway)`.
+**Heading Font:** [Raleway](https://fonts.google.com/specimen/Raleway) — weights 700, 900 (bold). Loaded via `next/font/google` in `app/layout.tsx` and exposed as `var(--font-raleway)`.
 
-Outfit is used for body copy and UI elements. Raleway is used exclusively for **all headings (h1, h2, h3, display) — always in all caps and bold**.
+Questrial is used for body copy and UI elements. Raleway is used exclusively for **all headings (h1, h2, h3, display) — always in all caps and bold**.
 
 ### Weight usage
 | Weight | Tailwind | Use |
 |---|---|---|
-| 400 | `font-normal` | Body copy, captions, meta (Outfit) |
-| 500 | `font-medium` | Tab labels, secondary nav (Outfit) |
-| 600 | `font-semibold` | Eyebrows, card titles (Outfit) |
-| 700 | `font-bold` | **Headings (h1–h3, display) in Raleway — ALWAYS ALL CAPS**, hero display numbers (Outfit) |
+| 400 | `font-normal` | Body copy, captions, meta (Questrial) |
+| 700 | `font-bold` | **Headings (h1–h3, display) in Raleway — ALWAYS ALL CAPS** |
+| 900 | `font-black` | Display headings and high-impact titles (Raleway) |
 
 ### Scale (fluid, from `@theme`)
 | Token | Utility | clamp() | Use |
@@ -79,11 +78,11 @@ Outfit is used for body copy and UI elements. Raleway is used exclusively for **
 | `.eyebrow` | `.eyebrow` | `0.75rem` uppercase, `0.16em` tracking, `font-semibold` | Section label |
 
 ### Typographic rules
-- **All headings (h1, h2, h3, display) must use Raleway font, bold weight (700), and ALL CAPS** (use `uppercase` class or hard-code).
+- **All headings (h1, h2, h3, display) must use Raleway font, bold weight (700 or 900), and ALL CAPS** (use `uppercase` class or hard-code).
 - Tighten tracking on large type: `tracking-tight` or `tracking-[-0.02em]` on display/h1.
 - Loosen tracking on small caps labels: `tracking-[0.16em]` (baked into `.eyebrow`).
 - Line-height: `leading-[1.1]` for display, `leading-tight` for headings, `leading-relaxed` for body paragraphs over 2 lines.
-- Body copy and UI elements use Outfit. Headings use Raleway. Never mix fonts on the same heading.
+- Body copy and UI elements use Questrial (400). Headings use Raleway (700 or 900). Never mix fonts on the same heading.
 - Never fake weight with text-shadow or filter tricks.
 
 ---
