@@ -1,11 +1,25 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import { Outfit, Raleway, Questrial } from "next/font/google";
 import "./globals.css";
 
 const outfit = Outfit({
   variable: "--font-outfit",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+
+const raleway = Raleway({
+  variable: "--font-raleway",
+  subsets: ["latin"],
+  weight: ["700", "900"],
+  display: "swap",
+});
+
+const questrial = Questrial({
+  variable: "--font-questrial",
+  subsets: ["latin"],
+  weight: ["400"],
   display: "swap",
 });
 
@@ -24,7 +38,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${outfit.variable} h-full antialiased`}
+      className={`${outfit.variable} ${raleway.variable} ${questrial.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[color:var(--color-paper)] text-[color:var(--color-ink)]">
         {children}

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import AnimateIn from "@/app/_components/AnimateIn";
 
 const TABS = [
   { id: "av", label: "Audio Video Solutions" },
@@ -85,12 +86,14 @@ export default function Categories() {
       <div className="container-page py-20 md:py-28">
 
         {/* Centre heading */}
-        <div className="text-center max-w-2xl mx-auto">
-          <span className="eyebrow text-brand">Product Categories</span>
-          <h2 className="mt-4 text-[length:var(--text-h1)] leading-[1.1] tracking-tight text-ink font-semibold">
-            Explore Our Solutions
-          </h2>
-        </div>
+        <AnimateIn>
+          <div className="text-center max-w-2xl mx-auto">
+            <span className="eyebrow text-brand">Product Categories</span>
+            <h2 className="mt-4 text-[length:var(--text-h1)] leading-[1.1] tracking-tight text-ink font-semibold">
+              Explore Our Solutions
+            </h2>
+          </div>
+        </AnimateIn>
 
         {/* Tabs — underline spans exact text width */}
         <div className="mt-10 flex justify-center">
@@ -99,7 +102,7 @@ export default function Categories() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`relative pb-3 pt-1 text-lg font-medium tracking-wide transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand ${
+                className={`relative pb-3 pt-1 text-lg sm:text-sm font-medium tracking-wide transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand ${
                   activeTab === tab.id ? "text-brand" : "text-muted hover:text-ink"
                 }`}
               >
@@ -120,8 +123,10 @@ export default function Categories() {
               : "sm:grid-cols-4"
           }`}
         >
-          {categories.map((c) => (
-            <CategoryCard key={c.title} category={c} />
+          {categories.map((c, i) => (
+            <AnimateIn key={c.title} delay={i * 80}>
+              <CategoryCard category={c} />
+            </AnimateIn>
           ))}
         </div>
       </div>

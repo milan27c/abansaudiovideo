@@ -2,8 +2,8 @@ import Header from "@/app/_components/Header";
 import Footer from "@/app/_components/Footer";
 import Hero from "./_components/Hero";
 import Overview from "./_components/Overview";
-import Categories from "./_components/Categories";
-import Spotlight from "./_components/Spotlight";
+import CommercialDisplays from "./_components/CommercialDisplays";
+import AVSolutions from "./_components/AVSolutions";
 import UseCases from "./_components/UseCases";
 import Brands from "./_components/Brands";
 import WhyAbans from "./_components/WhyAbans";
@@ -23,10 +23,10 @@ export default function CommercialDisplayAVPage() {
       <main className="flex-1">
         <Hero />
         <Overview />
-        <Categories />
-        <Spotlight />
-        <UseCases />
         <Brands />
+        <CommercialDisplays />
+        <AVSolutions />
+        <UseCases />
         <WhyAbans />
         <Contact />
       </main>
