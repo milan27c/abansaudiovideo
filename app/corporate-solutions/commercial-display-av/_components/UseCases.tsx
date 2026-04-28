@@ -100,9 +100,9 @@ export default function UseCases() {
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
                 />
                 <div className="absolute inset-0 bg-black/30 transition-opacity duration-500 group-hover:bg-black/45" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
+                <div className="absolute bottom-0 inset-x-0 h-1/2 bg-gradient-to-t from-black/85 via-black/30 to-transparent transition-all duration-500 group-hover:sm:h-2/3" />
 
-                <div className="absolute inset-x-0 bottom-0 p-4 sm:p-5 text-center sm:text-left">
+                <div className="absolute inset-x-0 bottom-0 p-4 sm:p-5 text-center">
                   <span
                     className="inline-block text-[0.6rem] font-semibold tracking-[0.16em] uppercase"
                     style={{ color: u.tagColor }}
@@ -112,7 +112,7 @@ export default function UseCases() {
                   <h3 className="mt-1 text-lg font-bold text-white leading-tight uppercase" style={{ fontFamily: "var(--font-raleway)" }}>
                     {u.name}
                   </h3>
-                  <div className="mt-2 flex flex-wrap justify-center sm:justify-start gap-1.5">
+                  <div className="mt-2 flex flex-wrap justify-center gap-1.5">
                     {u.chips.map((chip) => (
                       <span
                         key={chip}

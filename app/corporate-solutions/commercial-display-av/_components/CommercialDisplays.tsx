@@ -125,18 +125,18 @@ function SubCard({ item }: { item: Item }) {
       {/* Base dark tint */}
       <div className="absolute inset-0 bg-black/30 transition-opacity duration-500 group-hover:bg-black/45" />
 
-      {/* Bottom gradient */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
+      {/* Bottom gradient overlay */}
+      <div className="absolute bottom-0 inset-x-0 h-1/2 bg-gradient-to-t from-black/85 via-black/30 to-transparent transition-all duration-500 group-hover:sm:h-2/3" />
 
       {/* Content overlay */}
-      <div className="absolute inset-x-0 bottom-0 p-6 text-center sm:text-left">
+      <div className="absolute inset-x-0 bottom-0 p-6 text-center">
         {/* Title — always visible */}
         <h3 className="text-lg font-bold text-white leading-snug uppercase" style={{ fontFamily: "var(--font-raleway)" }}>
           {item.title}
         </h3>
 
-        {/* Description — revealed on hover */}
-        <div className="overflow-hidden max-h-0 opacity-0 group-hover:max-h-48 group-hover:opacity-100 transition-all duration-500 ease-out">
+        {/* Description — visible on mobile, revealed on hover on desktop */}
+        <div className="overflow-hidden max-h-full opacity-100 sm:max-h-0 sm:opacity-0 group-hover:sm:max-h-48 group-hover:sm:opacity-100 transition-all duration-500 ease-out">
           <p className="mt-3 text-sm leading-relaxed text-white/80">
             {item.body}
           </p>

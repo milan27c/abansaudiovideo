@@ -125,13 +125,13 @@ export default function AVSolutions() {
                   sizes="(min-width: 1280px) 230px, (min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-night/95 via-night/40 to-transparent" />
+                <div className="absolute bottom-0 inset-x-0 h-1/2 bg-gradient-to-t from-night/95 via-night/40 to-transparent transition-all duration-500 group-hover:sm:h-2/3" />
 
-                <div className="absolute inset-x-0 bottom-0 p-5">
+                <div className="absolute inset-x-0 bottom-0 p-5 text-center">
                   <h3 className="text-base font-bold text-white leading-snug uppercase" style={{ fontFamily: "var(--font-raleway)" }}>
                     {s.title}
                   </h3>
-                  <div className="overflow-hidden max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 ease-out">
+                  <div className="overflow-hidden max-h-full opacity-100 sm:max-h-0 sm:opacity-0 group-hover:sm:max-h-40 group-hover:sm:opacity-100 transition-all duration-500 ease-out">
                     <p className="mt-2 text-xs leading-relaxed text-white/80">
                       {s.body}
                     </p>
