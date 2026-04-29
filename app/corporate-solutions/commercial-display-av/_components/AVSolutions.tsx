@@ -14,7 +14,7 @@ const solutions: AVSolution[] = [
     body:
       "Clear, powerful and reliable sound for enterprise and large-scale environments — expertly designed, integrated and supported.",
     image:
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1400&q=90",
     alt: "Professional line array audio system in a venue",
   },
   {
@@ -22,7 +22,7 @@ const solutions: AVSolution[] = [
     body:
       "Structured, effective communication in meeting and conference environments — designed for seamless discussions and decision-making.",
     image:
-      "https://images.unsplash.com/photo-1559223607-a43c990c692c?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1559223607-a43c990c692c?auto=format&fit=crop&w=1400&q=90",
     alt: "Conference table with discussion microphones",
   },
   {
@@ -30,7 +30,7 @@ const solutions: AVSolution[] = [
     body:
       "Consistent sound distribution, centralised control and reliable performance across large facilities, campuses and public spaces.",
     image:
-      "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1400&q=90",
     alt: "Public address ceiling speaker installation",
   },
   {
@@ -38,7 +38,7 @@ const solutions: AVSolution[] = [
     body:
       "Integrated audio, video and collaboration technology for productive, frictionless meetings in modern enterprise spaces.",
     image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=90",
     alt: "Smart meeting room with video conferencing",
   },
   {
@@ -46,7 +46,7 @@ const solutions: AVSolution[] = [
     body:
       "Audio, visual and interactive technology that enhances engagement, collaboration and effective teaching in modern learning spaces.",
     image:
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1400&q=90",
     alt: "Modern smart classroom with interactive display",
   },
   {
@@ -54,7 +54,7 @@ const solutions: AVSolution[] = [
     body:
       "Powerful audio and immersive visuals engineered for auditoriums, theatres, halls and large public venues — built for clarity and scale.",
     image:
-      "https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=1400&q=90",
     alt: "Auditorium with large-venue AV system",
   },
   {
@@ -62,7 +62,7 @@ const solutions: AVSolution[] = [
     body:
       "Mission-critical environments for real-time monitoring, seamless control and reliable decision-making — engineered for continuous operation.",
     image:
-      "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1400&q=90",
     alt: "Operations control room with multiple displays",
   },
   {
@@ -70,7 +70,7 @@ const solutions: AVSolution[] = [
     body:
       "Seamless distribution of audio and visual signals across enterprise environments through expertly integrated AV systems.",
     image:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1400&q=90",
     alt: "AV equipment rack with cable management",
   },
   {
@@ -78,7 +78,7 @@ const solutions: AVSolution[] = [
     body:
       "Advanced lighting that enhances visibility, ambience and functionality across commercial and professional environments.",
     image:
-      "https://images.unsplash.com/photo-1545972154-9bb223aac798?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1545972154-9bb223aac798?auto=format&fit=crop&w=1400&q=90",
     alt: "Architectural lighting in a commercial space",
   },
   {
@@ -86,7 +86,7 @@ const solutions: AVSolution[] = [
     body:
       "Modern library management to simplify cataloguing, circulation and resource access for educational and institutional environments.",
     image:
-      "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1400&q=90",
     alt: "Modern library reading area",
   },
 ];

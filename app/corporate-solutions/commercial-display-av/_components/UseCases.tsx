@@ -19,7 +19,7 @@ const useCases: UseCase[] = [
     description:
       "Boardrooms, hybrid meeting rooms, lobbies and town-hall spaces with smart displays, conferencing and integrated AV.",
     image:
-      "https://images.unsplash.com/photo-1600508774634-4e11d34730e2?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1600508774634-4e11d34730e2?auto=format&fit=crop&w=1400&q=90",
     alt: "Corporate boardroom with AV system",
     chips: ["Smart Meeting Rooms", "Lobby Displays", "Conferencing"],
   },
@@ -30,7 +30,7 @@ const useCases: UseCase[] = [
     description:
       "In-store digital signage, brand walls and audio environments that guide customers and drive engagement at every touchpoint.",
     image:
-      "https://images.unsplash.com/photo-1481437156560-3205f6a55735?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1481437156560-3205f6a55735?auto=format&fit=crop&w=1400&q=90",
     alt: "Digital signage in a retail store",
     chips: ["Digital Signage", "LED Walls", "In-Store Audio"],
   },
@@ -41,7 +41,7 @@ const useCases: UseCase[] = [
     description:
       "Hotel and resort environments — guestroom TVs, lobby signage, banquet AV and centralised content management.",
     image:
-      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1400&q=90",
     alt: "Hotel lobby with ambient signage",
     chips: ["Hotel TVs", "Lobby Signage", "Banquet AV"],
   },
@@ -52,7 +52,7 @@ const useCases: UseCase[] = [
     description:
       "Smart classrooms, lecture-capture auditoriums, library automation and interactive displays for engaged learning.",
     image:
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1400&q=90",
     alt: "Modern classroom with interactive display",
     chips: ["Smart Classrooms", "Auditorium AV", "Library Automation"],
   },
@@ -63,7 +63,7 @@ const useCases: UseCase[] = [
     description:
       "Hospital TVs, patient information signage, wayfinding and clinical-grade audio that improve care and communication.",
     image:
-      "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1400&q=90",
     alt: "Hospital lobby with digital information display",
     chips: ["Hospital TVs", "Patient Signage", "Wayfinding"],
   },
